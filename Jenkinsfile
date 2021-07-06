@@ -7,5 +7,9 @@ pipeline {
                 sh 'pwd'
             }
         }    
+        stage('Test') {
+            steps {
+                sh 'echo "Fail!"; exit 1'
+            }        
     }    
 }
