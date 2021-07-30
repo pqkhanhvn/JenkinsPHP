@@ -1,3 +1,5 @@
 #!/bin/bash
 
-echo "Testing..."
+DATE=`date`
+LOG=test.log
+echo "$DATE : Testing......" > $LOG
