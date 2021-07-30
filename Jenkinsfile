@@ -5,20 +5,20 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-		echo "Built Success!";
+		sh build.sh
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing..'
 		/* sh 'php --version' */
-                sh 'echo "Test Success!"; exit 0'
+                sh test.sh
             }
         }
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-		sh 'echo "Deploy Success!"; exit 0'
+		sh deploy.sh
             }
         }
     }
