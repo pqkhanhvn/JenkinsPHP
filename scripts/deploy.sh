@@ -1,5 +1,5 @@
 #!/bin/bash
 
 DATE=`date`
-LOG=build.log
+LOG=deploy.log
 echo "$DATE : Deploying......" > $LOG
