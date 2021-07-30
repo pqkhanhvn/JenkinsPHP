@@ -1,15 +1,24 @@
 pipeline {
     agent { docker { image 'php' } }
+
     stages {
-        stage('build') {
+        stage('Build') {
             steps {
-                sh 'php --version'
-                sh 'pwd'
+                echo 'Building..'
             }
-        }    
+        }
         stage('Test') {
             steps {
-                sh 'echo "Success!"; exit 0'
-            }        
-    }    
+                echo 'Testing..'
+				sh 'php --version'
+                sh 'echo "Test Success!"; exit 0'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
+				sh 'echo "Deploy Success!"; exit 0'
+            }
+        }
+    }
 }
