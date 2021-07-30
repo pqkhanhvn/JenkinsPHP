@@ -10,14 +10,14 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
-				sh 'php --version'
+		sh 'php --version'
                 sh 'echo "Test Success!"; exit 0'
             }
         }
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-				sh 'echo "Deploy Success!"; exit 0'
+		sh 'echo "Deploy Success!"; exit 0'
             }
         }
     }
