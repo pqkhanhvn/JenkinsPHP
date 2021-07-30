@@ -1,3 +1,5 @@
 #!/bin/bash
 
-echo "build......"
+DATE=`date`
+LOG=build.log
+echo "$DATE : build......" > $LOG
