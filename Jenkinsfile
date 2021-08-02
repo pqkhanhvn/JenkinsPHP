@@ -5,7 +5,8 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-		sh 'pwd'    
+		sh 'pwd'
+	        /*sh 'maven build' */
 		sh 'sh scripts/build.sh'
             }
         }
