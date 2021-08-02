@@ -13,7 +13,7 @@ pipeline {
             steps {
                 echo 'Testing..'
 		/* sh 'php --version' */
-                sh 'sh scripts/test.sh'
+                sh sh scripts/test.sh
             }
         }
         stage('Deploy') {
