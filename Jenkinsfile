@@ -18,7 +18,7 @@ pipeline {
                 echo 'Testing..'		    
 		/* sh 'php --version' */
                 sh 'sh scripts/test.sh'
-		/*sh 'exit 1'    */
+		sh 'exit 1'    
             }
         }
         stage('Deploy') {
