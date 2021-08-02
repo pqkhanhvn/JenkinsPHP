@@ -7,6 +7,8 @@ pipeline {
                 echo 'Building..'
 		sh 'pwd'
 	        /*sh 'maven build' */
+		/*sh 'ant build' */
+		/*sh 'gradle build' */    
 		sh 'sh scripts/build.sh'
             }
         }
