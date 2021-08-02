@@ -1,5 +1,6 @@
 pipeline {
-    agent docker { image 'php:latest' }
+    /*agent any*/
+    agent { docker { image 'php:latest' } }
 
     stages {
         stage('Build') {
