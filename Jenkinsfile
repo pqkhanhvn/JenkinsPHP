@@ -14,12 +14,13 @@ pipeline {
                 echo 'Testing..'		    
 		/* sh 'php --version' */
                 sh 'sh scripts/test.sh'
+		sh 'maven test'
             }
         }
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-		sh 'sh scripts/deploy.sh
+		sh 'sh scripts/deploy.sh'
             }
         }
     }
