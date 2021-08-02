@@ -19,7 +19,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-		sh 'ansible deploy'		    
+		/* sh 'ansible deploy' */
 		sh 'sh scripts/deploy.sh'
             }
         }
