@@ -23,6 +23,7 @@ pipeline {
             steps {
                 echo 'Deploying....'
 		/* sh 'ansible deploy' */
+		/* sh 'chef deploy' */    
 		sh 'sh scripts/deploy.sh'
             }
         }
