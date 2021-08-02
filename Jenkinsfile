@@ -14,12 +14,12 @@ pipeline {
                 echo 'Testing..'		    
 		/* sh 'php --version' */
                 sh 'sh scripts/test.sh'
-		sh 'maven test'
             }
         }
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
+		sh 'ansible deploy'		    
 		sh 'sh scripts/deploy.sh'
             }
         }
