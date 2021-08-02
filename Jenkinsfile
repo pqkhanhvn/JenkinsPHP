@@ -1,13 +1,12 @@
 pipeline {
-    /*agent any*/
-    agent { docker { image 'php:latest' } }
+    agent any
+    /*agent { docker { image 'php:latest' } }*/
 
     stages {
         stage('Build') {
             steps {
                 echo 'Building..'
-		sh 'pwd'
-		sh 'php --version'
+		sh 'pwd'		
 	        /*sh 'maven build' */
 		/*sh 'ant build' */
 		/*sh 'gradle build' */    
