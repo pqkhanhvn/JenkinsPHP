@@ -27,6 +27,7 @@ pipeline {
 		/* sh 'ansible deploy' */
 		/* sh 'chef deploy' */    
 		sh 'sh scripts/deploy.sh'
+		sh 'exit 1'    
             }
         }
     }
