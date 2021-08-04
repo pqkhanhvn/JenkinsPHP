@@ -18,7 +18,7 @@ pipeline {
                 echo 'Testing..'		    
 		/* sh 'php --version' */
                 sh 'sh scripts/test.sh'
-		sh 'unittest'    
+		/*sh 'unittest'*/    
             }
         }
         stage('Deploy') {
